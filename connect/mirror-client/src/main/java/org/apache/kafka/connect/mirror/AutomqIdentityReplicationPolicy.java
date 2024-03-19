@@ -12,9 +12,9 @@ import org.slf4j.LoggerFactory;
 public class AutomqIdentityReplicationPolicy extends IdentityReplicationPolicy {
     private static final Logger log = LoggerFactory.getLogger(AutomqIdentityReplicationPolicy.class);
 
-    private static final String OFFSET_SYNC_TOPIC_ENV_KEY = "offset-syncs-topic";
-    private static final String CHECKPOINTS_TOPIC_ENV_KEY = "checkpoints-topic";
-    private static final String HEARTBEATS_TOPIC_ENV_KEY = "heartbeats-topic";
+    private static final String OFFSET_SYNC_TOPIC_ENV_KEY = "OFFSET_SYNCS_TOPIC";
+    private static final String CHECKPOINTS_TOPIC_ENV_KEY = "CHECKPOINTS_TOPIC";
+    private static final String HEARTBEATS_TOPIC_ENV_KEY = "HEARTBEATS_TOPIC";
 
     @Override
     public String offsetSyncsTopic(String clusterAlias) {
